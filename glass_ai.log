@@ -7,3 +7,173 @@
 2025-08-26 15:59:24,657 - __main__ - INFO - Starting Glass AI Flask Server v2.0...
 2025-08-26 15:59:24,657 - __main__ - INFO - Speech recognition enabled: True
 2025-08-26 15:59:24,657 - __main__ - INFO - Max content length: 16777216 bytes
+2025-08-27 20:01:21,741 - __main__ - INFO - Gemini AI configured successfully
+2025-08-27 20:01:22,676 - __main__ - INFO - Text-to-speech engine initialized
+2025-08-27 20:01:23,592 - __main__ - INFO - Calibrating microphone for ambient noise...
+2025-08-27 20:01:24,726 - __main__ - INFO - Microphone initialized and calibrated
+2025-08-27 20:01:24,726 - __main__ - INFO - AI Assistant Core initialized successfully
+2025-08-27 20:01:24,726 - __main__ - INFO - Glass AI Assistant initialized successfully
+2025-08-27 20:01:24,729 - __main__ - INFO - Starting Glass AI Flask Server v2.0...
+2025-08-27 20:01:24,729 - __main__ - INFO - Speech recognition enabled: True
+2025-08-27 20:01:24,729 - __main__ - INFO - Max content length: 16777216 bytes
+2025-08-27 20:07:37,326 - __main__ - INFO - Gemini AI configured successfully
+2025-08-27 20:07:37,908 - __main__ - INFO - Text-to-speech engine initialized
+2025-08-27 20:07:38,684 - __main__ - INFO - Calibrating microphone for ambient noise...
+2025-08-27 20:07:39,822 - __main__ - INFO - Microphone initialized and calibrated
+2025-08-27 20:07:39,823 - __main__ - INFO - AI Assistant Core initialized successfully
+2025-08-27 20:07:39,823 - __main__ - INFO - Glass AI Assistant initialized successfully
+2025-08-27 20:07:39,828 - __main__ - INFO - Starting Glass AI Flask Server v2.0...
+2025-08-27 20:07:39,828 - __main__ - INFO - Speech recognition enabled: True
+2025-08-27 20:07:39,828 - __main__ - INFO - Max content length: 16777216 bytes
+2025-08-27 20:08:45,760 - __main__ - INFO - Gemini AI configured successfully
+2025-08-27 20:08:46,367 - __main__ - INFO - Text-to-speech engine initialized
+2025-08-27 20:08:47,158 - __main__ - INFO - Calibrating microphone for ambient noise...
+2025-08-27 20:08:48,296 - __main__ - INFO - Microphone initialized and calibrated
+2025-08-27 20:08:48,296 - __main__ - INFO - AI Assistant Core initialized successfully
+2025-08-27 20:08:48,296 - __main__ - INFO - Glass AI Assistant initialized successfully
+2025-08-27 20:08:48,299 - __main__ - INFO - Starting Glass AI Flask Server v2.0...
+2025-08-27 20:08:48,299 - __main__ - INFO - Speech recognition enabled: True
+2025-08-27 20:08:48,299 - __main__ - INFO - Max content length: 16777216 bytes
+2025-08-27 20:08:48,373 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-27 20:08:48,373 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-27 20:08:50,972 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:08:50] "GET / HTTP/1.1" 200 -
+2025-08-27 20:08:51,758 - app - ERROR - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "/Users/divyansh/Downloads/glassProject/app.py", line 654, in not_found
+    return render_template('404.html'), 404
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2025-08-27 20:08:51,897 - __main__ - ERROR - Internal server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-08-27 20:08:51,898 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:08:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-08-27 20:08:52,026 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "/Users/divyansh/Downloads/glassProject/app.py", line 654, in not_found
+    return render_template('404.html'), 404
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 860, in handle_exception
+    server_error = self.ensure_sync(handler)(server_error)
+  File "/Users/divyansh/Downloads/glassProject/app.py", line 666, in internal_error
+    return render_template('500.html'), 500
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 500.html
+2025-08-27 20:08:53,773 - __main__ - INFO - Screenshot API endpoint called
+2025-08-27 20:08:53,773 - __main__ - INFO - Capturing screenshot...
+2025-08-27 20:09:03,227 - __main__ - INFO - Screenshot captured successfully (1033572 bytes)
+2025-08-27 20:09:03,234 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:09:03] "POST /api/screenshot HTTP/1.1" 200 -
+2025-08-27 20:09:17,118 - __main__ - INFO - AI query API called - Query: 82 chars, Has screenshot: True, Has context: True
+2025-08-27 20:09:17,140 - __main__ - INFO - Processing AI request #1
+2025-08-27 20:09:17,143 - __main__ - INFO - Starting OCR text extraction...
+2025-08-27 20:09:25,687 - __main__ - INFO - OCR extraction completed: 421 characters extracted
+2025-08-27 20:09:30,531 - __main__ - INFO - AI response generated successfully in 13.39s
+2025-08-27 20:09:30,532 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:09:30] "POST /api/ask HTTP/1.1" 200 -
+2025-08-27 20:10:05,539 - __main__ - INFO - Screenshot API endpoint called
+2025-08-27 20:10:05,540 - __main__ - INFO - Capturing screenshot...
+2025-08-27 20:10:14,706 - __main__ - INFO - Screenshot captured successfully (1241528 bytes)
+2025-08-27 20:10:14,713 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:10:14] "POST /api/screenshot HTTP/1.1" 200 -
+2025-08-27 20:10:23,354 - __main__ - INFO - AI query API called - Query: 37 chars, Has screenshot: True, Has context: True
+2025-08-27 20:10:23,374 - __main__ - INFO - Processing AI request #2
+2025-08-27 20:10:23,377 - __main__ - INFO - Starting OCR text extraction...
+2025-08-27 20:10:29,529 - __main__ - INFO - OCR extraction completed: 1331 characters extracted
+2025-08-27 20:10:33,553 - __main__ - INFO - AI response generated successfully in 10.18s
+2025-08-27 20:10:33,554 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:10:33] "POST /api/ask HTTP/1.1" 200 -
+2025-08-27 20:10:57,867 - __main__ - INFO - Settings updated via API
+2025-08-27 20:10:57,885 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:10:57] "POST /api/settings HTTP/1.1" 200 -

@@ -11,10 +11,12 @@ Features:
 - Text-to-speech feedback
 - OCR capabilities with high accuracy
 - Personal context awareness
+- RESTful API architecture
 - Glass-morphic UI design
 
 Author: Divyansh Gupta
 Version: 2.0.0
+License: MIT
 """
 
 from flask import Flask, render_template, request, jsonify

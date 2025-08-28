@@ -1,4 +1,3 @@
-````markdown
 # Glass AI - Advanced AI Assistant with Vision Capabilities
 
 ## 📑 Table of Contents
