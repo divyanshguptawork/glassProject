@@ -177,3 +177,121 @@ jinja2.exceptions.TemplateNotFound: 500.html
 2025-08-27 20:10:33,554 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:10:33] "POST /api/ask HTTP/1.1" 200 -
 2025-08-27 20:10:57,867 - __main__ - INFO - Settings updated via API
 2025-08-27 20:10:57,885 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:10:57] "POST /api/settings HTTP/1.1" 200 -
+2025-08-27 20:25:01,929 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:25:01] "GET / HTTP/1.1" 200 -
+2025-08-27 20:25:02,617 - app - ERROR - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "/Users/divyansh/Downloads/glassProject/app.py", line 654, in not_found
+    return render_template('404.html'), 404
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2025-08-27 20:25:02,619 - __main__ - ERROR - Internal server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2025-08-27 20:25:02,620 - werkzeug - INFO - 127.0.0.1 - - [27/Aug/2025 20:25:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-08-27 20:25:02,622 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "/Users/divyansh/Downloads/glassProject/app.py", line 654, in not_found
+    return render_template('404.html'), 404
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/werkzeug/serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/app.py", line 860, in handle_exception
+    server_error = self.ensure_sync(handler)(server_error)
+  File "/Users/divyansh/Downloads/glassProject/app.py", line 666, in internal_error
+    return render_template('500.html'), 500
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/divyansh/Downloads/glassProject/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 500.html

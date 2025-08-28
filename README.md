@@ -1,33 +1,33 @@
 # Glass AI - Advanced AI Assistant with Vision Capabilities
 
-## 📑 Table of Contents
-- [🌟 Project Overview](#-project-overview)  
-- [🔑 Key Features](#-key-features)  
-- [📁 Project Structure & File Details](#-project-structure--file-details)  
+## Table of Contents
+- [ Project Overview](#-project-overview)  
+- [ Key Features](#-key-features)  
+- [ Project Structure & File Details](#-project-structure--file-details)  
   - [Core Application Files](#core-application-files)  
   - [Frontend Files](#frontend-files)  
   - [Styling Files](#styling-files)  
   - [JavaScript Files](#javascript-files)  
-- [🚀 Installation & Setup](#-installation--setup)  
-- [🔧 Configuration Options](#-configuration-options)  
-- [💡 Usage Guide](#-usage-guide)  
-- [🔮 Future Development Roadmap](#-future-development-roadmap)  
-- [🛠 Technical Architecture](#-technical-architecture)  
-- [🔧 API Documentation](#-api-documentation)  
-- [🐛 Troubleshooting](#-troubleshooting)  
-- [🤝 Contributing](#-contributing)  
-- [📄 License & Credits](#-license--credits)  
-- [📞 Support & Contact](#-support--contact)  
-- [🚀 Quick Start Commands](#-quick-start-commands)  
+- [ Installation & Setup](#-installation--setup)  
+- [ Configuration Options](#-configuration-options)  
+- [ Usage Guide](#-usage-guide)  
+- [ Future Development Roadmap](#-future-development-roadmap)  
+- [ Technical Architecture](#-technical-architecture)  
+- [ API Documentation](#-api-documentation)  
+- [ Troubleshooting](#-troubleshooting)  
+- [ Contributing](#-contributing)  
+- [ License & Credits](#-license--credits)  
+- [ Support & Contact](#-support--contact)  
+- [ Quick Start Commands](#-quick-start-commands)  
 
 ---
 
-## 🌟 Project Overview
+##  Project Overview
 Glass AI is a sophisticated Flask-based AI assistant that combines computer vision, speech recognition, and Google's Gemini AI to create an intelligent, context-aware co-pilot experience. The application features a modern glass-morphic UI design with real-time screenshot analysis, speech-to-text capabilities, and OCR functionality.
 
 ---
 
-## 🔑 Key Features
+##  Key Features
 - Real-time Screenshot Analysis using Gemini Vision API  
 - Speech-to-Text with Google Speech Recognition  
 - Text-to-Speech feedback system  
@@ -40,7 +40,7 @@ Glass AI is a sophisticated Flask-based AI assistant that combines computer visi
 
 ---
 
-## 📁 Project Structure & File Details
+##  Project Structure & File Details
 
 ### Core Application Files
 
@@ -108,7 +108,7 @@ Features glass-morphic design with:
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Python 3.8+  
@@ -175,7 +175,7 @@ Access → [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 🔧 Configuration Options
+##  Configuration Options
 
 * `GEMINI_API_KEY` → required
 * `ENABLE_SPEECH` → enable/disable speech (default: True)
@@ -185,7 +185,7 @@ Access → [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 💡 Usage Guide
+##  Usage Guide
 
 * **Screenshots**: Click *Ask* → analyze screen content
 * **Voice**: Click *Listen* → speak your query
@@ -199,7 +199,7 @@ Access → [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 🔮 Future Development Roadmap
+##  Future Development Roadmap
 
 * **Phase 1**: Better OCR, multi-language speech, advanced screenshots
 * **Phase 2**: Memory system, multimodal inputs (video, audio, docs)
@@ -208,7 +208,7 @@ Access → [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 🛠 Technical Architecture
+##  Technical Architecture
 
 **Backend (Flask)**
 
@@ -226,7 +226,7 @@ User → Input (text/voice/screenshot) → Flask API → Gemini AI → Response 
 
 ---
 
-## 🔧 API Documentation
+##  API Documentation
 
 ### Screenshot Capture
 
@@ -267,7 +267,7 @@ User → Input (text/voice/screenshot) → Flask API → Gemini AI → Response 
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 * **Mic not working** → check permissions, devices
 * **Screenshot fails** → grant permissions (macOS/Windows)
@@ -283,7 +283,7 @@ User → Input (text/voice/screenshot) → Flask API → Gemini AI → Response 
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 * Follow **PEP 8**
 * Add docstrings & unit tests
@@ -297,10 +297,9 @@ flake8 src/
 
 ---
 
-## 📄 License & Credits
+##  Credits
 
-* **License**: MIT
-* **Author**: Divyansh Gupta
+* **Author**: Divyansh Gupta, Abhi Arora, Vince Reynolds
 * **Version**: 2.0.0
 * **AI**: Google Gemini API
 * **UI**: Custom Glass-morphic Design
@@ -310,17 +309,15 @@ flake8 src/
 
 ---
 
-## 📞 Support & Contact
+##  Support & Contact
 
 * **Issues** → GitHub Issues
 * **Discussions** → GitHub Discussions
-* **Docs** → [https://docs.glassai.com](https://docs.glassai.com)
-* **Email** → [support@glassai.com](mailto:support@glassai.com)
-* **Website** → [https://glassai.com](https://glassai.com)
+* **Email** → [divyanshguptabooks@gmail.com](mailto:divyanshguptabooks@gmail.com)
 
 ---
 
-## 🚀 Quick Start Commands
+##  Quick Start Commands
 
 ```bash
 # Clone and setup
@@ -345,7 +342,3 @@ python app.py
 
 Glass AI represents a cutting-edge approach to AI-assisted computing, combining modern web technologies with powerful AI capabilities to create an intuitive and helpful digital assistant. Its modular architecture ensures easy maintenance, extensibility, and developer adoption.
 
-```
-
-This is the **fully formatted GitHub-ready README.md** with a clickable table of contents. Would you like me to also add **badges** (e.g., Python version, license, build status) at the top for a more professional look?
-```
