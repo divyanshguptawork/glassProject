@@ -1,0 +1,67 @@
+# Glass AI - Production Dependencies
+# ===================================
+
+# Core Flask Framework
+flask==2.3.3
+werkzeug==2.3.7
+
+# AI and Machine Learning
+google-generativeai==0.3.2
+openai==1.3.5  # Backup AI provider
+
+# Image Processing
+Pillow==10.0.1
+opencv-python==4.8.1.78
+numpy==1.24.3
+
+# Speech Processing
+SpeechRecognition==3.10.0
+pyttsx3==2.90
+pyaudio==0.2.11
+
+# Web and HTTP
+requests==2.31.0
+urllib3==2.0.7
+gunicorn==21.2.0  # Production WSGI server
+
+# Security and Authentication
+flask-talisman==1.1.0  # Security headers
+flask-limiter==3.5.0   # Rate limiting
+cryptography==41.0.7
+
+# Data Processing
+python-dotenv==1.0.0
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Logging and Monitoring
+pythonjsonlogger==2.0.7
+structlog==23.2.0
+
+# Database (Optional for future features)
+psycopg2-binary==2.9.7
+sqlalchemy==2.0.23
+flask-sqlalchemy==3.0.5
+
+# Development and Testing Dependencies
+# (Install separately with: pip install -r requirements-dev.txt)
+
+# Performance and Optimization
+gevent==23.9.1  # Async support
+redis==5.0.1    # Caching (optional)
+
+# Utilities
+click==8.1.7
+python-magic==0.4.27
+validators==0.22.0
+
+# Production Deployment
+supervisor==4.2.5  # Process management
+setproctitle==1.3.3
+
+# Error Tracking (Optional)
+sentry-sdk[flask]==1.38.0
+
+# API Documentation (Optional)
+flask-restx==1.3.0
+apispec==6.3.0

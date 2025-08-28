@@ -1,0 +1,9 @@
+2025-08-26 15:59:21,096 - __main__ - INFO - Gemini AI configured successfully
+2025-08-26 15:59:22,522 - __main__ - INFO - Text-to-speech engine initialized
+2025-08-26 15:59:23,520 - __main__ - INFO - Calibrating microphone for ambient noise...
+2025-08-26 15:59:24,653 - __main__ - INFO - Microphone initialized and calibrated
+2025-08-26 15:59:24,653 - __main__ - INFO - AI Assistant Core initialized successfully
+2025-08-26 15:59:24,653 - __main__ - INFO - Glass AI Assistant initialized successfully
+2025-08-26 15:59:24,657 - __main__ - INFO - Starting Glass AI Flask Server v2.0...
+2025-08-26 15:59:24,657 - __main__ - INFO - Speech recognition enabled: True
+2025-08-26 15:59:24,657 - __main__ - INFO - Max content length: 16777216 bytes
